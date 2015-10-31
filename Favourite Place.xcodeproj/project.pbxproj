@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBA6ECFB1BE4CE5000B39EBB /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA6ECFA1BE4CE5000B39EBB /* AboutVC.swift */; };
 		BBAE385E1BE3EB9300676C54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAE385D1BE3EB9300676C54 /* AppDelegate.swift */; };
 		BBAE38601BE3EB9300676C54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAE385F1BE3EB9300676C54 /* ViewController.swift */; };
 		BBAE38631BE3EB9300676C54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAE38611BE3EB9300676C54 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BBA6ECFA1BE4CE5000B39EBB /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		BBAE385A1BE3EB9300676C54 /* Favourite Place.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Favourite Place.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAE385D1BE3EB9300676C54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBAE385F1BE3EB9300676C54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				BBAE385D1BE3EB9300676C54 /* AppDelegate.swift */,
 				BBAE385F1BE3EB9300676C54 /* ViewController.swift */,
 				BBAE38611BE3EB9300676C54 /* Main.storyboard */,
+				BBA6ECFA1BE4CE5000B39EBB /* AboutVC.swift */,
 				BBAE38641BE3EB9300676C54 /* Assets.xcassets */,
 				BBAE38661BE3EB9300676C54 /* LaunchScreen.storyboard */,
 				BBAE38691BE3EB9300676C54 /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				BBAE38601BE3EB9300676C54 /* ViewController.swift in Sources */,
 				BBAE385E1BE3EB9300676C54 /* AppDelegate.swift in Sources */,
+				BBA6ECFB1BE4CE5000B39EBB /* AboutVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +291,7 @@
 				BBAE386E1BE3EB9300676C54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

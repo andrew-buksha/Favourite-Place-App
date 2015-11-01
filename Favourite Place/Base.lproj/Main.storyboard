@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9527.1" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9048"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9525.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
@@ -41,14 +43,12 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlackSeaBg" translatesAutoresizingMaskIntoConstraints="NO" id="T0j-Lg-sNr">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pea-Q6-dM0">
                                 <rect key="frame" x="162" y="529" width="305" height="51"/>
                                 <subviews>
                                     <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0o2-L5-vNJ">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="51"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.065628773850000002" green="0.14227524350000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="51" id="1HN-Ec-qjL"/>
@@ -64,7 +64,6 @@
                                     </button>
                                     <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1b-en-RYn">
                                         <rect key="frame" x="155" y="0.0" width="150" height="51"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.065628773850000002" green="0.14227524350000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="4Kj-Cr-c21"/>
@@ -74,9 +73,11 @@
                                         <state key="normal" title="Photos">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="YkH-QT-UnA" kind="show" id="qKc-C6-NP0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9P6-19-FaX">
                                 <rect key="frame" x="20" y="25" width="323" height="212"/>
@@ -86,7 +87,6 @@
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Ov2-17-Brq">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
-                                                <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="lXD-cV-8Zd"/>
                                                     <constraint firstAttribute="height" constant="35" id="y4F-rX-iBu"/>
@@ -94,7 +94,6 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Krasnodar krai, Russia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BS-1o-Evq">
                                                 <rect key="frame" x="45" y="0.0" width="278" height="35"/>
-                                                <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="278" id="lRb-Bj-PM3"/>
                                                     <constraint firstAttribute="height" constant="35" id="rAc-oh-4ut"/>
@@ -104,11 +103,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <animations/>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelendzhik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsY-B5-cMU">
                                         <rect key="frame" x="0.0" y="65" width="298" height="56"/>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="9rn-vt-XBQ"/>
                                             <constraint firstAttribute="width" constant="298" id="EvW-er-Flu"/>
@@ -122,7 +119,6 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magnificent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Io-WC-RlV">
                                                 <rect key="frame" x="0.0" y="0.0" width="278" height="23"/>
-                                                <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="278" id="hrf-1K-ehr"/>
                                                     <constraint firstAttribute="height" constant="23" id="qdV-sp-hAr"/>
@@ -133,7 +129,6 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seaside" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIQ-wg-cjc">
                                                 <rect key="frame" x="0.0" y="18" width="278" height="24"/>
-                                                <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="278" id="NEU-t0-JoR"/>
                                                     <constraint firstAttribute="height" constant="24" id="VKz-8b-god"/>
@@ -144,7 +139,6 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resort" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYK-ug-nqV">
                                                 <rect key="frame" x="0.0" y="37" width="278" height="24"/>
-                                                <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="278" id="0HG-nd-y5n"/>
                                                     <constraint firstAttribute="height" constant="24" id="7ND-SQ-vMb"/>
@@ -154,13 +148,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <animations/>
                                     </stackView>
                                 </subviews>
-                                <animations/>
                             </stackView>
                         </subviews>
-                        <animations/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="T0j-Lg-sNr" secondAttribute="bottom" id="96K-9f-G90"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pea-Q6-dM0" secondAttribute="bottom" constant="20" id="BJp-CC-BNP"/>
@@ -177,6 +168,166 @@
             </objects>
             <point key="canvasLocation" x="165" y="379"/>
         </scene>
+        <!--PhotosVC-->
+        <scene sceneID="XV0-yM-dAD">
+            <objects>
+                <viewController id="YkH-QT-UnA" customClass="PhotosVC" customModule="Favourite_Place" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xkg-gg-5kG"/>
+                        <viewControllerLayoutGuide type="bottom" id="gkq-aT-4Xc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cTP-Cm-6yE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="2600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnM-9J-7Pe">
+                                <rect key="frame" x="240" y="23" width="121" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="3fU-TR-oPN"/>
+                                    <constraint firstAttribute="width" constant="121" id="XEv-23-5cw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bzb-7N-PtO">
+                                <rect key="frame" x="0.0" y="76" width="600" height="2524"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3Q-Vq-fq2">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1900"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cPZ-My-1Uk">
+                                                <rect key="frame" x="30" y="25" width="540" height="1730"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo1" translatesAutoresizingMaskIntoConstraints="NO" id="7jI-Zl-pyh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="540" height="360"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="360" id="Dy2-sb-Igg">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo2" translatesAutoresizingMaskIntoConstraints="NO" id="Wqx-Uf-YC0">
+                                                        <rect key="frame" x="0.0" y="375" width="540" height="360"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="360" id="64i-8J-UM9">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo3" translatesAutoresizingMaskIntoConstraints="NO" id="Efe-dS-phM">
+                                                        <rect key="frame" x="0.0" y="750" width="540" height="360"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="360" id="u8r-Bq-PBw">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo4" translatesAutoresizingMaskIntoConstraints="NO" id="u7E-uZ-A3J">
+                                                        <rect key="frame" x="0.0" y="1125" width="540" height="310"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="310" id="VKp-2u-zNa">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo5" translatesAutoresizingMaskIntoConstraints="NO" id="fp4-wl-wan">
+                                                        <rect key="frame" x="0.0" y="1450" width="540" height="280"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="280" id="Luc-ss-Y8V">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="390"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.28961539520000001" green="0.35847158849999999" blue="0.41009851060000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1900" id="2XR-CJ-asW">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="2600"/>
+                                            </constraint>
+                                            <constraint firstItem="cPZ-My-1Uk" firstAttribute="leading" secondItem="b3Q-Vq-fq2" secondAttribute="leading" constant="30" id="Lgs-Yc-MuJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="cPZ-My-1Uk" secondAttribute="trailing" constant="30" id="eil-gV-ldE"/>
+                                            <constraint firstItem="cPZ-My-1Uk" firstAttribute="top" secondItem="b3Q-Vq-fq2" secondAttribute="top" constant="25" id="nW7-iO-nK9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="b3Q-Vq-fq2" secondAttribute="trailing" id="2eG-lA-qOP"/>
+                                    <constraint firstItem="b3Q-Vq-fq2" firstAttribute="leading" secondItem="Bzb-7N-PtO" secondAttribute="leading" id="N8d-9d-abU"/>
+                                    <constraint firstAttribute="bottom" secondItem="b3Q-Vq-fq2" secondAttribute="bottom" id="hRj-ho-CgB"/>
+                                    <constraint firstItem="b3Q-Vq-fq2" firstAttribute="top" secondItem="Bzb-7N-PtO" secondAttribute="top" id="lmx-wv-P4H"/>
+                                </constraints>
+                            </scrollView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9xe-r8-TpP">
+                                <rect key="frame" x="20" y="28" width="92" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayM-nh-2wA">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="HRz-XN-hcW"/>
+                                            <constraint firstAttribute="width" constant="35" id="XRw-ON-GYg"/>
+                                        </constraints>
+                                        <state key="normal" image="backBtn"/>
+                                        <connections>
+                                            <action selector="BackBtnPressed:" destination="YkH-QT-UnA" eventType="touchUpInside" id="Byc-PM-i3F"/>
+                                            <action selector="backBtnPressed:" destination="4Zg-Zg-fwH" eventType="touchUpInside" id="x9k-T0-NSp"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAy-pO-Bj1">
+                                        <rect key="frame" x="50" y="0.0" width="42" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0da-R9-WZr"/>
+                                            <constraint firstAttribute="width" constant="42" id="fkA-w7-c5D"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="ContentSize">
+                                        <size key="value" width="600" height="798"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2896153952294096" green="0.35847158845026955" blue="0.41009851055806945" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gkq-aT-4Xc" firstAttribute="top" secondItem="Bzb-7N-PtO" secondAttribute="bottom" id="DAa-II-DCW"/>
+                            <constraint firstItem="b3Q-Vq-fq2" firstAttribute="width" secondItem="cTP-Cm-6yE" secondAttribute="width" id="DcK-uO-EO0"/>
+                            <constraint firstItem="gkq-aT-4Xc" firstAttribute="top" secondItem="Bzb-7N-PtO" secondAttribute="bottom" id="MgT-4I-Pmh"/>
+                            <constraint firstItem="9xe-r8-TpP" firstAttribute="leading" secondItem="cTP-Cm-6yE" secondAttribute="leadingMargin" id="T7t-CW-adN"/>
+                            <constraint firstAttribute="trailing" secondItem="Bzb-7N-PtO" secondAttribute="trailing" id="UHL-Ru-liL"/>
+                            <constraint firstItem="Bzb-7N-PtO" firstAttribute="leading" secondItem="cTP-Cm-6yE" secondAttribute="leading" id="Yst-Pe-pQo"/>
+                            <constraint firstItem="Bzb-7N-PtO" firstAttribute="top" secondItem="TnM-9J-7Pe" secondAttribute="bottom" constant="8" id="Zle-uL-pD2"/>
+                            <constraint firstItem="9xe-r8-TpP" firstAttribute="top" secondItem="Xkg-gg-5kG" secondAttribute="bottom" constant="8" id="ZtA-vP-d0d"/>
+                            <constraint firstItem="Bzb-7N-PtO" firstAttribute="top" secondItem="TnM-9J-7Pe" secondAttribute="bottom" constant="8" symbolic="YES" id="aMH-td-W0h"/>
+                            <constraint firstAttribute="trailing" secondItem="Bzb-7N-PtO" secondAttribute="trailing" id="b5P-iv-VPg"/>
+                            <constraint firstItem="Bzb-7N-PtO" firstAttribute="leading" secondItem="cTP-Cm-6yE" secondAttribute="leading" id="gmh-dw-gWb"/>
+                            <constraint firstItem="TnM-9J-7Pe" firstAttribute="top" secondItem="Xkg-gg-5kG" secondAttribute="bottom" constant="3" id="mWr-Fk-KCZ"/>
+                            <constraint firstItem="TnM-9J-7Pe" firstAttribute="centerX" secondItem="cTP-Cm-6yE" secondAttribute="centerX" id="orM-jV-Cmc"/>
+                            <constraint firstItem="Bzb-7N-PtO" firstAttribute="top" secondItem="cTP-Cm-6yE" secondAttribute="top" id="t1Q-Ms-2WG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UHL-Ru-liL"/>
+                                <exclude reference="Yst-Pe-pQo"/>
+                                <exclude reference="aMH-td-W0h"/>
+                                <exclude reference="t1Q-Ms-2WG"/>
+                                <exclude reference="DAa-II-DCW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="2600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c69-lh-yGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1652" y="992"/>
+        </scene>
         <!--AboutVC-->
         <scene sceneID="zJC-I2-W7L">
             <objects>
@@ -191,14 +342,14 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AboutPic" translatesAutoresizingMaskIntoConstraints="NO" id="3s6-r1-eqn">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
-                                <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="199" id="Hnb-wY-YIu"/>
+                                    <constraint firstAttribute="height" constant="199" id="Hnb-wY-YIu">
+                                        <variation key="heightClass=compact" constant="100"/>
+                                    </constraint>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Introducing the city of Gelendzhik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MO7-Z4-mkb">
                                 <rect key="frame" x="26" y="87" width="548" height="35"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="wY9-3P-VNT"/>
                                     <constraint firstAttribute="width" constant="278" id="xhd-6M-wSn"/>
@@ -212,7 +363,6 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARO-6F-ISm">
                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="G2b-Xd-4xi"/>
                                             <constraint firstAttribute="width" constant="35" id="JlG-k0-Ze6"/>
@@ -224,7 +374,6 @@
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leo-Yh-FCc">
                                         <rect key="frame" x="45" y="0.0" width="42" height="35"/>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="oiD-9L-kBh"/>
                                             <constraint firstAttribute="width" constant="42" id="v7u-Bz-cdR"/>
@@ -234,7 +383,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <animations/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="ContentSize">
                                         <size key="value" width="600" height="798"/>
@@ -247,196 +395,173 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTk-tH-bE1">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dtr-S1-4pY" userLabel="PopulationStack">
-                                                <rect key="frame" x="30" y="26" width="88" height="49"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8lG-97-gN6">
+                                                <rect key="frame" x="30" y="26" width="540" height="1069"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RB-mr-mRI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="21"/>
-                                                        <animations/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                        <color key="textColor" red="0.26654647440000001" green="0.26654647440000001" blue="0.26654647440000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="67,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uP2-z3-94t">
-                                                        <rect key="frame" x="0.0" y="31" width="88" height="18"/>
-                                                        <animations/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                        <color key="textColor" red="0.26654647440000001" green="0.26654647440000001" blue="0.26654647440000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <animations/>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JDS-30-AH8" userLabel="HistoryStack">
-                                                <rect key="frame" x="30" y="100" width="540" height="530"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0f-qt-2xh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="58" height="292"/>
-                                                        <animations/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                        <color key="textColor" red="0.26654647440000001" green="0.26654647440000001" blue="0.26654647440000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <variation key="heightClass=compact" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="58" height="92"/>
-                                                        </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="58" height="21"/>
-                                                        </variation>
-                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="58" height="21"/>
-                                                        </variation>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5y-la-aRS">
-                                                        <rect key="frame" x="0.0" y="302" width="540" height="228"/>
-                                                        <animations/>
-                                                        <string key="text">In antiquity, the Gelendzhik Bay was the site of a minor Greek outpost, mentioned as Torikos in the Periplus of Pseudo-Scylax. During the Middle Ages, the bay was of some mercantile importance to the Genoese traders who referred to the seaside village as Maurolaca. 
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dtr-S1-4pY" userLabel="PopulationStack">
+                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="49"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RB-mr-mRI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="88" height="21"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                                <color key="textColor" red="0.26654647440000001" green="0.26654647440000001" blue="0.26654647440000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="67,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uP2-z3-94t">
+                                                                <rect key="frame" x="0.0" y="31" width="88" height="18"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                <color key="textColor" red="0.26654647440000001" green="0.26654647440000001" blue="0.26654647440000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JDS-30-AH8" userLabel="HistoryStack">
+                                                        <rect key="frame" x="0.0" y="59" width="540" height="530"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0f-qt-2xh">
+                                                                <rect key="frame" x="0.0" y="0.0" width="58" height="292"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                                <color key="textColor" red="0.26654647440000001" green="0.26654647440000001" blue="0.26654647440000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="58" height="92"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="58" height="21"/>
+                                                                </variation>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="58" height="21"/>
+                                                                </variation>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5y-la-aRS">
+                                                                <rect key="frame" x="0.0" y="302" width="540" height="228"/>
+                                                                <string key="text">In antiquity, the Gelendzhik Bay was the site of a minor Greek outpost, mentioned as Torikos in the Periplus of Pseudo-Scylax. During the Middle Ages, the bay was of some mercantile importance to the Genoese traders who referred to the seaside village as Maurolaca. 
 Before Russia secured the coast by the Treaty of Adrianople (1829), a brisk slave trade had been carried on between the mountaineers and the Ottoman Empire. Since the Circassian beauties were usually traded for gold and other commodities before being taken to Turkish seraglios, the market place became known as "Gelendzhik" (from "gelincik"), literally, "little bride" in Turkish Language. At the outbreak of the Crimean War the fort had to be blown up and abandoned, but it was resettled by the Cossacks in 1864, at the conclusion of the Russian-Circassian War, and became known as the stanitsa of Gelendzhiksaya. Town status was granted to Gelendzhik in 1915.</string>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                        <color key="textColor" red="0.26654647440000001" green="0.26654647440000001" blue="0.26654647440000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <variation key="heightClass=compact" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="102" width="540" height="228"/>
-                                                        </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="31" width="540" height="189"/>
-                                                        </variation>
-                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="31" width="540" height="189"/>
-                                                        </variation>
-                                                    </label>
-                                                </subviews>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="530" id="nAH-ju-AWM">
-                                                        <variation key="heightClass=compact" constant="330"/>
-                                                        <variation key="heightClass=compact-widthClass=regular" constant="220"/>
-                                                        <variation key="heightClass=regular-widthClass=regular" constant="220"/>
-                                                    </constraint>
-                                                </constraints>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OlM-er-dDQ" userLabel="DescriptionStack">
-                                                <rect key="frame" x="30" y="640" width="540" height="220"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9J6-Fm-RlV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="122"/>
-                                                        <animations/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                        <color key="textColor" red="0.26654647440000001" green="0.26654647440000001" blue="0.26654647440000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <variation key="heightClass=compact" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="94" height="62"/>
-                                                        </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="94" height="21"/>
-                                                        </variation>
-                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="94" height="21"/>
-                                                        </variation>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91T-za-TLz">
-                                                        <rect key="frame" x="0.0" y="132" width="538" height="88"/>
-                                                        <animations/>
-                                                        <string key="text">This resort city is situated on the bank of the Black sea at the Gelendzhik bay, formed by 2 capes – Tonkiy (Thin) and Tolstiy (Thick). Gelendzhik resort zone consolidates settlements in the riverside from Kabardinka to Arhipo-Osipovka. Winter in Gelendzhik is warmer and softer, than in Novorossiysk, and summer is arider than in Sochi. The sky is almost always cloudless.</string>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                        <color key="textColor" red="0.26654647440000001" green="0.26654647440000001" blue="0.26654647440000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <variation key="heightClass=compact" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="72" width="538" height="88"/>
-                                                        </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="31" width="538" height="79"/>
-                                                        </variation>
-                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="31" width="538" height="79"/>
-                                                        </variation>
-                                                    </label>
-                                                </subviews>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="220" id="qCN-rV-1SC">
-                                                        <variation key="heightClass=compact" constant="160"/>
-                                                        <variation key="heightClass=compact-widthClass=regular" constant="110"/>
-                                                        <variation key="heightClass=regular-widthClass=regular" constant="110"/>
-                                                    </constraint>
-                                                </constraints>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3wS-Jy-5Yb" userLabel="ThingsToDoStack">
-                                                <rect key="frame" x="30" y="868" width="540" height="230"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Things to do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhf-aD-AlS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="102" height="115"/>
-                                                        <animations/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                        <color key="textColor" red="0.26654647440000001" green="0.26654647440000001" blue="0.26654647440000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <variation key="heightClass=compact" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="102" height="45"/>
-                                                        </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="102" height="21"/>
-                                                        </variation>
-                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="102" height="21"/>
-                                                        </variation>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diQ-OM-B6Q">
-                                                        <rect key="frame" x="0.0" y="125" width="526" height="105"/>
-                                                        <animations/>
-                                                        <string key="text">One of the top places in Gelendzhik is Safari-Park. You can drive in your own vehicle here, or you can rent it. The main attractions here are frequently large animals, such as giraffes, lions etc. It also has a funicular, so you can watch at the city from a height. 
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                <color key="textColor" red="0.26654647440000001" green="0.26654647440000001" blue="0.26654647440000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="102" width="540" height="228"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="31" width="540" height="189"/>
+                                                                </variation>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="31" width="540" height="189"/>
+                                                                </variation>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="530" id="nAH-ju-AWM">
+                                                                <variation key="heightClass=compact" constant="330"/>
+                                                                <variation key="heightClass=compact-widthClass=regular" constant="220"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="220"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OlM-er-dDQ" userLabel="DescriptionStack">
+                                                        <rect key="frame" x="0.0" y="599" width="538" height="230"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9J6-Fm-RlV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="132"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                                <color key="textColor" red="0.26654647440000001" green="0.26654647440000001" blue="0.26654647440000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="94" height="62"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="94" height="21"/>
+                                                                </variation>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="94" height="21"/>
+                                                                </variation>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91T-za-TLz">
+                                                                <rect key="frame" x="0.0" y="142" width="538" height="88"/>
+                                                                <string key="text">This resort city is situated on the bank of the Black sea at the Gelendzhik bay, formed by 2 capes – Tonkiy (Thin) and Tolstiy (Thick). Gelendzhik resort zone consolidates settlements in the riverside from Kabardinka to Arhipo-Osipovka. Winter in Gelendzhik is warmer and softer, than in Novorossiysk, and summer is arider than in Sochi. The sky is almost always cloudless.</string>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                <color key="textColor" red="0.26654647440000001" green="0.26654647440000001" blue="0.26654647440000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="72" width="538" height="88"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="31" width="538" height="79"/>
+                                                                </variation>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="31" width="538" height="79"/>
+                                                                </variation>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="230" id="qCN-rV-1SC">
+                                                                <variation key="heightClass=compact" constant="160"/>
+                                                                <variation key="heightClass=compact-widthClass=regular" constant="110"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="110"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3wS-Jy-5Yb" userLabel="ThingsToDoStack">
+                                                        <rect key="frame" x="0.0" y="839" width="526" height="230"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Things to do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhf-aD-AlS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="102" height="115"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                                <color key="textColor" red="0.26654647440000001" green="0.26654647440000001" blue="0.26654647440000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="102" height="45"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="102" height="21"/>
+                                                                </variation>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="102" height="21"/>
+                                                                </variation>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diQ-OM-B6Q">
+                                                                <rect key="frame" x="0.0" y="125" width="526" height="105"/>
+                                                                <string key="text">One of the top places in Gelendzhik is Safari-Park. You can drive in your own vehicle here, or you can rent it. The main attractions here are frequently large animals, such as giraffes, lions etc. It also has a funicular, so you can watch at the city from a height. 
 You also should visit Golden Bay water park. This is one of the biggest aqua parks in Russia. You’ll be having fun out there.</string>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                        <color key="textColor" red="0.26654647440000001" green="0.26654647440000001" blue="0.26654647440000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <variation key="heightClass=compact" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="55" width="526" height="105"/>
-                                                        </variation>
-                                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="31" width="526" height="89"/>
-                                                        </variation>
-                                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="31" width="526" height="89"/>
-                                                        </variation>
-                                                    </label>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                <color key="textColor" red="0.26654647440000001" green="0.26654647440000001" blue="0.26654647440000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="55" width="526" height="105"/>
+                                                                </variation>
+                                                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="31" width="526" height="89"/>
+                                                                </variation>
+                                                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="31" width="526" height="89"/>
+                                                                </variation>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="230" id="cyu-Pl-b6f">
+                                                                <variation key="heightClass=compact" constant="160"/>
+                                                                <variation key="heightClass=compact-widthClass=regular" constant="120"/>
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                    </stackView>
                                                 </subviews>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="230" id="cyu-Pl-b6f">
-                                                        <variation key="heightClass=compact" constant="160"/>
-                                                        <variation key="heightClass=compact-widthClass=regular" constant="120"/>
-                                                        <variation key="heightClass=regular-widthClass=regular" constant="120"/>
-                                                    </constraint>
-                                                </constraints>
                                             </stackView>
                                         </subviews>
-                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="3wS-Jy-5Yb" firstAttribute="top" secondItem="OlM-er-dDQ" secondAttribute="bottom" constant="10" id="37D-4o-Rh4"/>
-                                            <constraint firstItem="JDS-30-AH8" firstAttribute="top" secondItem="Dtr-S1-4pY" secondAttribute="bottom" constant="10" id="5GX-zF-nD3"/>
-                                            <constraint firstAttribute="trailing" secondItem="3wS-Jy-5Yb" secondAttribute="trailing" constant="30" id="EPc-3h-7at"/>
-                                            <constraint firstItem="Dtr-S1-4pY" firstAttribute="top" secondItem="PTk-tH-bE1" secondAttribute="top" constant="26" id="PiT-Xj-PSs"/>
-                                            <constraint firstItem="JDS-30-AH8" firstAttribute="top" secondItem="PTk-tH-bE1" secondAttribute="top" constant="100" id="SXk-Se-zzM"/>
-                                            <constraint firstItem="3wS-Jy-5Yb" firstAttribute="leading" secondItem="PTk-tH-bE1" secondAttribute="leading" constant="30" id="Zia-bo-xVU"/>
+                                            <constraint firstItem="8lG-97-gN6" firstAttribute="leading" secondItem="PTk-tH-bE1" secondAttribute="leading" constant="30" id="U4p-63-eT8"/>
                                             <constraint firstAttribute="height" priority="800" constant="1200" id="bcr-G0-TBH">
                                                 <variation key="heightClass=compact" constant="800"/>
                                                 <variation key="heightClass=compact-widthClass=regular" constant="600"/>
                                                 <variation key="heightClass=regular-widthClass=regular" constant="600"/>
                                             </constraint>
-                                            <constraint firstAttribute="trailing" secondItem="JDS-30-AH8" secondAttribute="trailing" constant="30" id="ggG-0q-lca"/>
-                                            <constraint firstItem="OlM-er-dDQ" firstAttribute="leading" secondItem="PTk-tH-bE1" secondAttribute="leading" constant="30" id="nCY-h3-vAo"/>
-                                            <constraint firstItem="OlM-er-dDQ" firstAttribute="top" secondItem="JDS-30-AH8" secondAttribute="bottom" constant="10" id="nlQ-L7-aaj"/>
-                                            <constraint firstItem="JDS-30-AH8" firstAttribute="leading" secondItem="PTk-tH-bE1" secondAttribute="leading" constant="30" id="sGD-Dm-wQQ"/>
-                                            <constraint firstItem="Dtr-S1-4pY" firstAttribute="leading" secondItem="PTk-tH-bE1" secondAttribute="leading" constant="30" id="td1-UC-LsK"/>
-                                            <constraint firstAttribute="trailing" secondItem="OlM-er-dDQ" secondAttribute="trailing" constant="30" id="vIy-eR-tgD"/>
+                                            <constraint firstAttribute="trailing" secondItem="8lG-97-gN6" secondAttribute="trailing" constant="30" id="jec-rr-xEQ"/>
+                                            <constraint firstItem="8lG-97-gN6" firstAttribute="top" secondItem="PTk-tH-bE1" secondAttribute="top" constant="26" id="xak-OC-bjj"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="SXk-Se-zzM"/>
-                                            </mask>
-                                        </variation>
                                     </view>
                                 </subviews>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="PTk-tH-bE1" secondAttribute="trailing" id="1PU-sZ-TiV"/>
                                     <constraint firstItem="PTk-tH-bE1" firstAttribute="leading" secondItem="9pk-0m-yBj" secondAttribute="leading" id="G1h-7v-Dlz"/>
@@ -445,7 +570,6 @@ You also should visit Golden Bay water park. This is one of the biggest aqua par
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="3s6-r1-eqn" secondAttribute="trailing" id="7wx-rP-Ixb"/>
@@ -483,6 +607,11 @@ You also should visit Golden Bay water park. This is one of the biggest aqua par
     <resources>
         <image name="AboutPic" width="1366" height="768"/>
         <image name="BlackSeaBg" width="1601" height="1200"/>
+        <image name="Photo1" width="2048" height="1536"/>
+        <image name="Photo2" width="2048" height="1536"/>
+        <image name="Photo3" width="1024" height="767"/>
+        <image name="Photo4" width="1024" height="646"/>
+        <image name="Photo5" width="2048" height="1125"/>
         <image name="backBtn" width="64" height="64"/>
         <image name="mapIcon" width="64" height="64"/>
     </resources>
